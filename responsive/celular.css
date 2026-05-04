@@ -1,0 +1,443 @@
+@media (max-width: 600px) {
+    body {
+        font-family: sans-serif;
+    }
+
+    /*Reglamentación*/
+    .titulo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 2px solid #bebaba;
+        width: fit-content;
+        margin: auto;
+        font-size: 3vh;
+    }
+
+    #seccion1 {
+        border-bottom: 2px solid #bebaba;
+    }
+
+    .reglamentacion-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .reglamentacion-info img {
+       width: 40vh; 
+       height: 30vh;
+    }
+
+    .desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .desc h2 {
+        font-size: 4vh;
+    }
+
+    .desc p {
+        font-size: 2vh;
+        width: 45vh;
+    }
+
+    .desc ul {
+        font-size: 2vh;
+    }
+
+    /*Instituciones*/
+    #seccion2 {
+        border-bottom: 2px solid #bebaba;
+    }
+
+    .info-instu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        margin: 5vh;
+    }
+
+    .info-instu h2 {
+        font-size: 3vh;
+        text-align: center;
+    }
+
+    .instituciones {
+        display: flex;
+        gap: 5vh;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .institucion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30vh;
+        border: 1px solid #bebaba;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 20px #0a50b9;
+        text-align: center;
+        height: 8vh;
+        transition: height 0.5s ease; 
+    }
+
+    .leer-mas {
+        color: #0a50b9;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .leer-mas:hover {
+        font-size: 30px;
+    }
+
+    .institucion h3 {
+        font-size: 1.8vh;
+    }
+
+    .institucion p {
+        display: none;
+    }
+
+    .institucionCambio {
+        height: 20vh;
+    }
+
+    .institucionCambio p {
+        display: flex;
+        font-size: 14.5px;
+    }
+
+    /*Ministerio trabajo ventana*/
+
+    .fondo-ministerio {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fondo-ministerio-cambio {
+        display: flex;
+    }
+
+    /*Diseño para todas las ventanas*/
+    .info {
+        background-color: white;
+        padding: 5vh;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        width: 30vh;
+    }
+
+    .info h3{
+        font-size: 2vh;
+    }
+
+    .info p{
+        font-size: 2vh;
+        width: 30vh;
+    }
+
+    .cerrarVentanaMinisterio {
+        display: flex;
+        background-color: red;
+        color: white;
+        width: 3vh;
+        text-align: center;
+        padding: 5px;
+        border: none;
+        border-radius: 5px;
+        position: fixed;
+        top: 5vh;
+        right: 5vh;
+    }
+
+    /*Tribunales Trabajo ventana*/
+    .fondo-tribunales {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fondo-tribunales-cambio {
+        display: flex;
+    }
+
+    .cerrarVentanaTribunal {
+        display: flex;
+        background-color: red;
+        color: white;
+        width: 3vh;
+        text-align: center;
+        padding: 5px;
+        border: none;
+        border-radius: 5px;
+        position: fixed;
+        top: 18vh;
+        right: 5vh;
+    }
+
+    /*Organizacion Trabajo ventana*/
+    .fondo-organizacion {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fondo-organizacion-cambio {
+        display: flex;
+    }
+
+    .cerrarVentanaOrganizacion {
+        display: flex;
+        background-color: red;
+        color: white;
+        width: 3vh;
+        text-align: center;
+        padding: 5px;
+        border: none;
+        border-radius: 5px;
+        position: fixed;
+        top: 15vh;
+        right: 5vh;
+    }
+
+    /*Competencia*/
+
+    #seccion3 {
+        border-bottom: 2px solid #bebaba;
+    }
+
+    .competencia-info {
+        display: flex;
+        margin: 5vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .img-competencia {
+        width: 40vh;
+        height: 30vh;
+    }
+
+    .desc-competencia {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .desc-competencia h2 {
+        font-size: 3vh;
+        width: 40vh;
+    }
+
+    .desc-competencia p {
+        font-size: 2.5vh;
+        width: 40vh;
+    }
+
+    .desc-competencia ul {
+        font-size: 2.5vh;
+    }
+
+    .desc-competencia h3 {
+        font-size: 2.5vh;
+    }
+
+    /*Factores*/
+    #seccion4 {
+        border-bottom: 2px solid #bebaba;
+    }
+
+    .info-factores {
+        display: flex;
+        margin: 5vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .factores {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .factores h2 {
+        font-size: 3vh;
+        width: 40vh;
+    }
+
+    .factores p {
+        font-size: 2.5vh;
+        width: 35vh;
+    }
+
+    .factores ul {
+        font-size: 2.5vh;
+    }
+
+    .factores h3 {
+        font-size: 3vh;
+    }
+
+    /*Discriminaciones*/
+    .discriminaciones {
+        display: flex;
+        margin: 2vh;
+        flex-direction: column;
+        border: 2px solid #bebaba;
+        border-radius: 5px;
+        width: 40vh;
+        box-shadow: 0px 0px 20px #0a50b9;
+    }
+
+    .genero {
+        height: 40vh;
+        transition: height 0.5s ease;
+    }
+
+    .etnia {
+        height: 50vh;
+        transition: height 0.5s ease;
+    }
+
+    .estrato {
+        height: 55vh;
+        transition: height 0.5s ease;
+    }
+
+    .nacionalidad {
+        height: 40vh;
+        transition: height 0.5s ease;
+    }
+
+    .discriminacion {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 2px solid #bebaba;
+        position: relative;
+        text-align: center;
+    }
+
+    .discriminacion h3{
+        font-size: 2.5vh;
+    }
+
+    .discriminacion p {
+        font-size: 2vh;
+    }
+
+    .discriminacion h4 {
+        font-size: 2vh;
+    }
+
+    .discriminacion ul {
+        font-size: 2vh;
+    }
+
+    .arrow {
+        position: absolute;
+        top: 2vh;
+        left: 15px;
+        width: 4vh;
+        height: 4vh;
+        cursor: pointer;
+    }
+
+    /*Clase cambiadora*/
+    .discriminacion-cambio {
+        height: 8vh;
+    }
+
+    .discriminacion-cambio p {
+        display: none;
+    }
+
+    .discriminacion-cambio h4 {
+        display: none;
+    }
+
+    .discriminacion-cambio ul {
+        display: none;
+    }
+
+    /*Derechos laborales*/
+    .derechos-info {
+        display: flex;
+        flex-direction: column;
+        margin: 5vh;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .derechos-laborales {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .derechos-laborales h2 {
+        font-size: 3vh;
+        width: 40vh;
+    }
+
+    .derechos-laborales h3 {
+        font-size: 3vh;
+        width: 40vh;
+    }
+
+    .derechos-laborales p {
+        font-size: 2.5vh;
+        width: 40vh;
+    }
+
+    .derechos-laborales ul {
+        font-size: 2.5vh;
+    }
+
+    .derechos-info img {
+        width: 40vh;
+        height: 30vh;
+    }
+}
